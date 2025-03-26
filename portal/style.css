@@ -129,13 +129,12 @@ body {
   background-color: #1a1a80;
 }
 
-/* ======= FOOTER STYLES ======= */
+/* Footer */
 .footer {
   background-color: #000033;
   text-align: center;
   padding: 40px 5%;
-  width: 100%;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 .footer-content-box {
