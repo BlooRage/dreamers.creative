@@ -21,132 +21,135 @@
     </div>
   </header>
 
-  <!-- Navigation Menu -->
-  <nav class="navbar">
-    <a href="../index/index.html">HOME</a>
-    <a href="../aboutus/about.html">ABOUT US</a>
-    <a href="../portal/portal.html">PORTAL</a>
-    <a href="../contact/contact.html">CONTACT</a>
-    <a href="../enrollnow/enroll.html">ENROLL NOW!</a>
-  </nav>
+  <a href="../enrollnow/enroll.html" class="return-button" title="Go Back">&#x21A9;</a>
+
 
   <body>
     <div class="container">
-        <h1 class="title">DREAMERS CREATIVE BRAINS ACADEMY</h1>
-        <h2 class="subtitle">ONLINE ADMISSION FORM</h2>
+      <h1 class="title">DREAMERS CREATIVE BRAINS ACADEMY</h1>
+      <h2 class="subtitle">ONLINE ADMISSION FORM</h2>
+  
+      <form>
+        <!-- Seeking Admission -->
+        <fieldset class="admission-section">
+          <legend>SEEKING ADMISSION FOR:</legend>
+          <div class="radio-group">
+            <label><input type="radio" name="grade" value="tutorial"> Tutorial</label>
+            <label><input type="radio" name="grade" value="nursery"> Nursery</label>
+            <label><input type="radio" name="grade" value="kinder1"> Kinder 1</label>
+            <label><input type="radio" name="grade" value="kinder2"> Kinder 2</label>
+            <label><input type="radio" name="grade" value="grade1"> Grade 1</label>
+            <label><input type="radio" name="grade" value="grade2"> Grade 2</label>
+            <label><input type="radio" name="grade" value="grade3"> Grade 3</label>
+            <label><input type="radio" name="grade" value="grade4"> Grade 4</label>
+            <label><input type="radio" name="grade" value="grade5"> Grade 5</label>
+          </div>
+        </fieldset>
+  
+        <!-- Student Information -->
+        <fieldset>
+          <legend>STUDENT INFORMATION</legend>
+          <div class="input-group">
+            <input type="text" placeholder="Last Name" required>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Suffix">
+          </div>
+          <div class="input-group">
+            <input type="date" required>
+            <input type="number" placeholder="Age" required>
+            <select required>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <input type="text" placeholder="Religion">
+          </div>
+          <input type="text" placeholder="Address" required>
+          <input type="text" placeholder="Last School Attended">
+          <input type="text" placeholder="Mother Tongue">
+          <input type="text" placeholder="Name of Siblings in School">
+        </fieldset>
+  
+        <!-- Parent/Guardian Information -->
+        <fieldset>
+          <legend>PARENT AND GUARDIAN INFORMATION</legend>
+  
+          <h3>Father's Information</h3>
+          <div class="input-group">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Suffix">
+          </div>
+          <input type="text" placeholder="Occupation">
+          <input type="text" placeholder="Contact Number">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Facebook Account">
+  
+          <h3>Mother's Information</h3>
+          <div class="input-group">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Suffix">
+          </div>
+          <input type="text" placeholder="Occupation">
+          <input type="text" placeholder="Contact Number">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Facebook Account">
+  
+          <h3>Guardian's Information</h3>
+          <div class="input-group">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Middle Name">
+            <input type="text" placeholder="Suffix">
+          </div>
+          <input type="text" placeholder="Occupation">
+          <input type="text" placeholder="Contact Number">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Facebook Account">
+        </fieldset>
+  
+        <!-- Form Footer with Buttons -->
+        <div class="form-footer" align="right">
+          <br>
+          <a href="../reference/ref.html" class="proceed-btn">SUBMIT</a>
 
-        <form>
-            <!-- Seeking Admission -->
-            <fieldset class="admission-section">
-                <legend>SEEKING ADMISSION FOR:</legend>
-                <div class="radio-group">
-                    <label><input type="radio" name="grade" value="tutorial"> Tutorial</label>
-                    <label><input type="radio" name="grade" value="nursery"> Nursery</label>
-                    <label><input type="radio" name="grade" value="kinder1"> Kinder 1</label>
-                    <label><input type="radio" name="grade" value="kinder2"> Kinder 2</label>
-                    <label><input type="radio" name="grade" value="grade1"> Grade 1</label>
-                    <label><input type="radio" name="grade" value="grade2"> Grade 2</label>
-                    <label><input type="radio" name="grade" value="grade3"> Grade 3</label>
-                    <label><input type="radio" name="grade" value="grade4"> Grade 4</label>
-                    <label><input type="radio" name="grade" value="grade5"> Grade 5</label>
-                </div>
-            </fieldset>
-
-            <!-- Student Information -->
-            <fieldset>
-                <legend>STUDENT INFORMATION</legend>
-                <div class="input-group">
-                    <input type="text" placeholder="Last Name" required>
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Middle Name">
-                    <input type="text" placeholder="Suffix">
-                </div>
-                <div class="input-group">
-                    <input type="date" required>
-                    <input type="number" placeholder="Age" required>
-                    <select required>
-                        <option>Male</option>
-                        <option>Female</option>
-                    </select>
-                    <input type="text" placeholder="Religion">
-                </div>
-                <input type="text" placeholder="Address" required>
-                <input type="text" placeholder="Last School Attended">
-                <input type="text" placeholder="Mother Tongue">
-                <input type="text" placeholder="Name of Siblings in School">
-            </fieldset>
-
-            <!-- Parent/Guardian Information -->
-            <fieldset>
-                <legend>PARENT AND GUARDIAN INFORMATION</legend>
-
-                <h3>Father's Information</h3>
-                <div class="input-group">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Middle Name">
-                    <input type="text" placeholder="Suffix">
-                </div>
-                <input type="text" placeholder="Occupation">
-                <input type="text" placeholder="Contact Number">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Facebook Account">
-
-                <h3>Mother's Information</h3>
-                <div class="input-group">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Middle Name">
-                    <input type="text" placeholder="Suffix">
-                </div>
-                <input type="text" placeholder="Occupation">
-                <input type="text" placeholder="Contact Number">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Facebook Account">
-
-                <h3>Guardian's Information</h3>
-                <div class="input-group">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Middle Name">
-                    <input type="text" placeholder="Suffix">
-                </div>
-                <input type="text" placeholder="Occupation">
-                <input type="text" placeholder="Contact Number">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Facebook Account">
-            </fieldset>
-
-            <a href="../payment/payment.html" type="submit" class="proceed-btn" style="text-decoration:none; text-align: center;">PROCEED</a>
-        </form>
+        </div>
+      </form>
     </div>
-</body>
-
-  <!-- Footer -->
+  </body>
+  
   <footer class="footer">
+    <!-- box sa baba-->
     <div class="footer-content-box">
-      <h4>START YOUR CHILD’S EDUCATION HERE</h4>
+      <h4><strong>START YOUR CHILD’S EDUCATION HERE</strong></h4>
       <div class="footer-contact">
         <div class="footer-item">
           <i class="fas fa-envelope"></i>
-          <span>dreamerscreative.rodriguez@gmail.com</span>
+          <p>dreamerscreative.rodriguez@gmail.com</p>
         </div>
         <div class="footer-item">
           <i class="fas fa-phone"></i>
-          <span>09479009876</span>
+          <p>09479009876</p>
         </div>
         <div class="footer-item">
+          <!-- fb logo -->
           <a href="https://facebook.com/yourpage" target="_blank">
             <i class="fab fa-facebook"></i>
           </a>
-          <span>Dreamers Creative Brains Inc.</span>
+          <p>Dreamers Creative Brains Inc.</p>
         </div>
         <div class="footer-item">
           <i class="fas fa-map-marker-alt"></i>
-          <span>69 Toblam Street, Espiritu, Balite, Rodriguez, Rizal</span>
+          <p>69 Toblam Street, Espiritu, Balite, Rodriguez, Rizal</p>
         </div>
       </div>
     </div>
   </footer>
+  
+
+
 </body>
 </html>

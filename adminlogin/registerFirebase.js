@@ -129,10 +129,10 @@ document.getElementById('submitSignIn').addEventListener('click', async (event) 
     
     // Role-based redirection
     const roleRedirects = {
-      Registrar: '../registrarportal/regport.html',
-      Cashier: '../cashierportal/cash.html',
+      Registrar: '../principalportal/pnc.html',
+      Cashier: '../principalportal/pnc.html',
       Principal: '../principalportal/pnc.html',
-      Administrator: '../adminportal/admin.html'
+      Administrator: '../principalportal/pnc.html'
     };
 
     const redirectURL = roleRedirects[userData.role] || 'homepage.html';

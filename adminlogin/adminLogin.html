@@ -38,31 +38,33 @@
     </div>
   </header>
 
+ 
   <!-- nav buttons -->
   <nav class="navbar">
-    <a href="../index/index.html">HOME</a>
-    <a href="../aboutus/about.html">ABOUT US</a>
+    <a href="../index.html">HOME</a>
+    <a href="#">GALLERY</a>
     <a href="../portal/portal.html">PORTAL</a>
     <a href="../contact/contact.html">CONTACT</a>
-    <a href="../enrollnow/enroll.html">ENROLL NOW!</a>
+    <a href="../enrollnow/enroll.html">ENROLL TODAY!</a>
   </nav>
+
 
   <!-- Main Content-->
   <section class="main-content">
 
     
  <!-- Login Box (Initially Visible) -->
- <div class="login-box">
+ <div class="login-box" style="width: 500px;">
   <div class="input-group">
     <h2>LOGIN</h2><br>
-    <label>EMAIL OR ID NUMBER</label>
+    
     <input type="text" id="login-credential" placeholder="ENTER EMAIL OR ID NUMBER" />
-    <span class="error-box" id="login-credential-error"></span>
+    <span class="error-box" id="login-credential-error"></span><label><b>EMAIL OR ID NUMBER</b></label>
   </div>
   <div class="input-group">
-    <label>PASSWORD</label>
+    
     <input type="password" id="login-password" placeholder="ENTER PASSWORD" />
-    <span class="error-box" id="login-password-error"></span>
+    <span class="error-box" id="login-password-error"></span><label><b>PASSWORD</b></label>
   </div>
   <button class="login-btn" id= "submitSignIn"onclick="validateLogin()">Sign In</button>
   <div id="signInMessage" class="messageDiv" style="display:none;"></div><br><br>
@@ -72,7 +74,7 @@
 
 
 <!-- Register Box (Initially Hidden) -->
-<div class="register-box" style="display: none;">
+<div class="register-box"  style="display: none;">
   <div class="input-group">
     <h2>CREATE ACCOUNT</h2><br>
     <input name="LastN" id="register-lastname" type="text" placeholder="ENTER LASTNAME" />
@@ -114,7 +116,7 @@
 </div>
 
 <!-- Forgot Password Box (Initially Hidden) -->
-<div class="forgot-box" style="display: none;">
+<div class="forgot-box" style="display: none;" style="width: 500px;">
   <div class="input-group">
     <h2>FORGOT PASSWORD</h2><br>
     <input type="email" id="forgot-password-email" placeholder="Enter Email" />
@@ -128,29 +130,30 @@
 
 
   <!-- footer -->
+  <!-- footer -->
   <footer class="footer">
     <!-- box sa baba-->
     <div class="footer-content-box">
-      <h4>START YOUR CHILD’S EDUCATION HERE</h4>
+      <h4><strong>START YOUR CHILD’S EDUCATION HERE</strong></h4>
       <div class="footer-contact">
         <div class="footer-item">
           <i class="fas fa-envelope"></i>
-          <span>dreamerscreative.rodriguez@gmail.com</span>
+          <p>dreamerscreative.rodriguez@gmail.com</p>
         </div>
         <div class="footer-item">
           <i class="fas fa-phone"></i>
-          <span>09479009876</span>
+          <p>09479009876</p>
         </div>
         <div class="footer-item">
           <!-- fb logo -->
           <a href="https://facebook.com/yourpage" target="_blank">
             <i class="fab fa-facebook"></i>
           </a>
-          <span>Dreamers Creative Brains Inc.   </span>
+          <p>Dreamers Creative Brains Inc.</p>
         </div>
         <div class="footer-item">
           <i class="fas fa-map-marker-alt"></i>
-          <span>69 Toblam Street, Espiritu, Balite, Rodriguez, Rizal</span>
+          <p>69 Toblam Street, Espiritu, Balite, Rodriguez, Rizal</p>
         </div>
       </div>
     </div>

@@ -1,144 +1,241 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 /* ======= GLOBAL STYLES ======= */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Georgia Pro", serif;
-    background-color: #000033;
-    color: rgb(0, 0, 0);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  background-color: #000033;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+p, a, label {
+  font-family: Poppins, sans-serif;
+}
+
+ h1, h2, h3, h4, h5, span {
+  font-family: 'Merriweather', sans-serif;
 }
 
 /* ======= HEADER STYLES ======= */
 .top-header {
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    border: 5px solid #000033;
-    border-radius: 10px;
-    box-shadow: 5px 5px 0px #000033;
-    width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 1%;
+  border: 5px solid #000033;
+  border-radius: 0px;
+  box-shadow: 5px 5px 0px #000033;
+  width: 100%;
+  margin-bottom:25px;
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .school-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
 }
 
 .school-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
 }
 
 .header-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .school-id {
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: right;
-    color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+  color: black;
 }
-
-
-/* ======= MAIN CONTENT STYLES ======= */
-.main-content {
-    text-align: center;
-    background: #fff;
-    padding: 60px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    height: 80vh;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.page-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000033;
-    margin-bottom: 20px;
-}
-
-.content-box {
+  
+  /* ======= NAVIGATION BAR ======= */
+  .navbar {
+    background-color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-
-
-.bottom-section {
-    display: flex;
-    justify-content: space-between;
+    gap: 40px;
+    padding: 15px 5%;
+    border: 5px solid #000033;
+    border-radius: px;
+    box-shadow: 5px 5px 0px #000033;
     width: 100%;
-    padding: 20px;
-}
-
-.user-info {
+    margin-top: 10px;
+  }
+  
+  .navbar a {
+    color: #000033;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 1rem;
-    color: black;
-    text-align: left;
-}
-
-.logout-button {
-    padding: 10px 20px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
     background-color: #000033;
     color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+ /* ===== ADMIN PORTAL MAIN CONTENT ===== */
+.admin-main {
+    background: #fff;
+    margin: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1400px;
+    border: 5px solid #000033;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000033;
+    text-align: center;
+    color: #000;
+  }
+  
+  .admin-main h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .admin-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .admin-buttons {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .admin-buttons button {
+    padding: 15px;
+    background-color: #000033;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-buttons button:hover {
+    background-color: #3333aa;
+  }
+  
+ 
+  .admin-credentials {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .admin-credentials p {
+    font-size: 0.9rem;
+  }
+  
+  .admin-id {
+    color: red;
+  }
+  
+  .admin-table {
+    flex: 2;
+    min-width: 500px;
+    overflow-x: auto;
+  }
+  
+  .admin-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .admin-table th, .admin-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .admin-table th {
+    background-color: #000033;
+    color: white;
+  }
+  
+  .admin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .admin-right-side {
+    flex: 2;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .logout-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+  }
+  
+  .logout-button {
+    padding: 15px 30px;
+    background-color: #000033;
+    color: white;
+    font-weight: bold;
     font-size: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    align-self: flex-end;
-}
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #3333aa;
+  }
+  
 
-.logout-button:hover {
-    background-color: #0c0c71;
-}
-
-
-
-
-
-/* ======= FOOTER STYLES ======= */
-.footer {
+  /* ======= FOOTER STYLES ======= */
+  .footer {
     background-color: #000033;
     text-align: center;
-    padding: 40px 5%;
+    padding: 40px 0.25% 0.25%;
     width: 100%;
-    margin-top: 40px;
   }
   
   .footer-content-box {
     background-color: #fff;
     color: #000;
     display: inline-block;
+    width: 100%;
     padding: 20px 40px;
-    border-radius: 8px;
   }
   
   .footer-content-box h4 {
@@ -174,6 +271,20 @@ body {
   
   .footer-item a:hover {
     text-decoration: underline;
+  }
+  
+  
+  .header-title {
+    text-align: center;
+    margin: 10px 0px 10px;
+    color: #000;
+  }
+  
+  .page-paragraph {
+    text-align: justify;
+    margin: 10px;
+    padding: 0px 10px 5px;
+    color: #000;
   }
   
   .user-id {

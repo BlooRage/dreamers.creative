@@ -29,7 +29,7 @@ history.pushState(null, null, location.href);
 window.addEventListener('popstate', function () {
     if (!localStorage.getItem('loggedInUserId')) {
         alert("You need to login first!");
-        window.location.href = '../index/index.html';
+        window.location.href = '../index.html';
     }
 });
 
@@ -54,7 +54,7 @@ onAuthStateChanged(auth, (user) => {
         });
     } else {
         alert("You need to login first!");
-        window.location.href = '../index/index.html';
+        window.location.href = '../index.html';
     }
 });
 
@@ -64,7 +64,7 @@ document.getElementById('logout').addEventListener('click', () => {
     .then(() => {
         localStorage.removeItem('loggedInUserId'); // Remove after sign out
         alert("Logout successful!"); // Show logout success message
-        window.location.href = '../index/index.html';
+        window.location.href = '../index.html';
     })
     .catch((error) => {
         console.error('Error Signing out:', error);

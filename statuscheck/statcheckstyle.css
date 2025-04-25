@@ -24,7 +24,7 @@
     align-items: center;
     padding: 15px 5%;
     border: 5px solid #000033;
-    border-radius: 10px;
+    border-radius: px;
     box-shadow: 5px 5px 0px #000033;
     width: 100%;
   }
@@ -68,7 +68,7 @@
     gap: 40px;
     padding: 15px 5%;
     border: 5px solid #000033;
-    border-radius: 10px;
+    border-radius: px;
     box-shadow: 5px 5px 0px #000033;
     width: 100%;
     margin-top: 10px;
@@ -230,5 +230,47 @@
   
   .footer-item a:hover {
     text-decoration: underline;
+  }
+  
+
+  .return-btn {
+    display: inline-block;
+    background-color: white;
+    color: #fff;
+    border: 2px solid white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .return-btn:hover {
+    background-color: #fff;
+    color: #000033;
+    border: 2px solid #000033;
+  }
+
+  .return-button {
+    position: absolute;
+    top: 130px; /* Distance from the top of the page */
+    left: 25px; /* Distance from the left edge of the page */
+    background-color: white;
+    color: #000033;
+    padding: 8px;
+    font-size: 24px;
+    text-decoration: none;
+    border: 1px solid #000033;
+    border-radius: 20%;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .return-button:hover {
+    background-color: #000033;
+    color: white;
+    border-color: white;
   }
   
